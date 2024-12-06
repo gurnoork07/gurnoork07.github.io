@@ -3,43 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EECS 440 Portfolio</title>
+    <title>Gurnoor Kaur Portfolio</title>
     <style>
+        /* General styling */
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
-        }
-        h1, h2 {
             color: #333;
         }
-        p {
-            line-height: 1.6;
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
         }
-        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #1abc9c;
+        }
+        .content {
+            padding: 20px;
+        }
+        .tab {
+            display: none;
+        }
+        .tab.active {
+            display: block;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+        iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+            margin-top: 10px;
+        }
+        ul {
+            line-height: 1.8;
+        }
     </style>
 </head>
 <body>
-    <h1>EECS 440 Portfolio</h1>
-    <p>Hi! My name is Gurnoor Kaur, and I'm a robotics student with a CS minor at the University of Michigan. This site showcases my exciting journey through the EECS 440 Extended Reality projects.</p>
+    <!-- Header -->
+    <header>
+        <h1>Gurnoor Kaur Portfolio</h1>
+        <p>Robotics Student | CS Minor | Incoming Robotics MS Student</p>
+    </header>
 
-    <h2>Project 1: Late Night Lab Adventure</h2>
-    <p>Welcome to my first project, crafted using Unreal Engine and the Meta Quest Pro. 
-        I worked with two other students to create an immersive simulation that captures the experience of being a student working late nights BBB computer lab. </p>
-    <p>As you explore the lab, you’ll encounter a cast of characters that bring the environment to life, and if you’re adventurous enough, 
-        you might just discover a secret lounge room hidden within! Ready to dive in? Look <a href="https://youtu.be/GoC0SkYqHgM" >here</a> to find it!</p>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#" onclick="showTab('home')">Home</a>
+        <a href="#" onclick="showTab('eecs440')">EECS 440</a>
+    </nav>
+
+    <!-- Home Content -->
+    <div id="home" class="content tab active">  <!-- Home tab visible by default -->
+        <div class="card">
+            <h3>Resume</h3>
+            <ul>
+                <li><strong>Education:</strong> University of Michigan - Robotics BSE, CS Minor, Master’s Student, Graduating - Dec 2025</li>
+                <li><strong>Skills:</strong> Unity, Unreal, SolidWorks, Raspberry Pi, Arduino, PLC Programming, Siemens TIA, Roboguide</li>
+                <li><strong>Languages:</strong> C++, C#, Python, Java, MATLAB, HTML, CSS, Julia</li>
+                
+                <li><strong>Experience:</strong>
+                    <ul>
+                        <li><strong>FANUC:</strong>
+                            <ul>
+                                <li>Developed KAREL scripts to evaluate MQTT functionality and integration with the R30iB Plus controller.</li>
+                                <li>Created product information training material and product improvement proposals, including prototypes of custom HMI screens and a robot monitoring website.</li>
+                                <li>Conducted software and options testing for the new R50iA controller, and evaluated the Software PLC product to assess its capabilities and limitations.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Student Researcher - Haptic Interface Development:</strong>
+                            <ul>
+                                <li>Designed a prototype for a non-vibrational interface allowing two-way communication between users and technology.</li>
+                                <li>Utilized SolidWorks and 3D printing for rapid prototyping with inflatable rubber molds for haptic feedback.</li>
+                                <li>Integrated Arduino, pressure sensors, and pneumatic gauges to control prototype responsiveness and functionality.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Wipro PARI:</strong>
+                            <ul>
+                                <li>Streamlined testing, debugging, and troubleshooting for production processes.</li>
+                                <li>Engaged in cross-functional teams with mechanical, electrical, and controls expertise for project execution.</li>
+                                <li>Collaborated with clients in meetings and production line testing to align strategies to specific needs.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Student Researcher - Behavioral Computational Analysis:</strong>
+                            <ul>
+                                <li>Programmed state machine modules in MATLAB to observe and analyze animal behavior.</li>
+                                <li>Integrated behavioral and motor control software with offline analysis systems.</li>
+                                <li>Presented research project and learned about other students’ work in research at UROP Annual Research Symposium.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h3>Projects</h3>
+            <ul>
+                <li><strong>Extended Reality:</strong>
+                    <ul>
+                        <li>Developed Virtual and Augmented Reality applications using Unreal Engine, Meta Quest Pro, Unity, and Mapbox to showcase computer science education and enable outdoor exploration.</li>
+                        <li>Created an AR application designed to bridge the gap in early music education, incorporating spatial audio, digital object line rendering, and user-custom scene development, enabling up to 100 objects and custom environments.</li>    
+                    </ul>
+                </li>
+                
+                <li><strong>Deep Learning for Robot Perception:</strong>
+                    <ul>
+                        <li>Constructed a multi-layer convolutional neural network achieving 97% accuracy in object classification with train/test datasets.</li>
+                        <li>Implemented image classification models, including K-Nearest Neighbors, Softmax, and a two-layer network showcasing proficiency and tradeoffs between the methods.</li>
+                    </ul>
+                </li>
+                <li><strong>Motion Planning in Simulated Robotics:</strong>
+                    <ul>
+                        <li>Developed collision-free path planning algorithms, including A-star for navigating unknown frontiers and RRT-connect for robotic arm obstacle avoidance, achieving a 95% task completion rate in simulated environments.</li>
+                        <li>Implemented simultaneous localization and mapping (SLAM) using occupancy grids, Bresenham’s algorithm for LIDAR based mapping, and particle filters for localization, enhancing mapping accuracy.</li>
+                        <li>Created a web-simulator for n-link robots with forward and inverse kinematics using Jacobian transpose method to control pose, direction, and orientation.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
     
-        <h3>Project 2: Ann Arbor Go</h3>
-        <p>This is the second project I have worked on in this class, focusing on augmented reality. It was developed using Unity and collaborating with one other person. </p>
-        <p>The project invites users to explore Ann Arbor through an interactive map, discovering landmarks, planting trees, and enjoying fun, spooky games.
-           
-        Look <a href="https://youtu.be/MrE0LQmaMBI" >here</a> to find it!</p>
-        
-        <h3>Project 3: Melody Grove</h3>
-        <p>This is the final project for the class, focusing on augmented reality. It was developed using Unity and collaborating with three other people. </p>
-        <p>Melody Grove is an application designed for early music education, blending interactive sound 'gardens' with spatial audio and customizable digital environments. Users can explore plant-themed objects that represent musical cells, enabling immersive sound mixing and creative learning.
-           
-        Look <a href="https://zhangjt.wixsite.com/music-space-dev-log" >here</a> to find it!</p>
-        
+    <!-- EECS 440 Content -->
+    <div id="eecs440" class="content tab">
+        <h2>EECS 440: Extended Reality Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="card">
+            <h3>Project 1: Late Night Lab Adventure</h3>
+            <p>Welcome to my first project, crafted using Unreal Engine and the Meta Quest Pro. I worked with two other students to create an immersive simulation that captures the experience of being a student working late nights in the computer lab.</p>
+            <p>As you explore the lab, you’ll encounter a cast of characters that bring the environment to life, and if you’re adventurous enough, you might just discover a secret lounge room hidden within! Ready to dive in?</p>
+            <iframe src="https://www.youtube.com/embed/GoC0SkYqHgM" allowfullscreen></iframe>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card">
+            <h3>Project 2: Ann Arbor Go</h3>
+            <p>This is the second project I have worked on in this class, focusing on augmented reality. It was developed using Unity and collaborating with one other person.</p>
+            <p>The project invites users to explore Ann Arbor through an interactive map, discovering landmarks, planting trees, and enjoying fun, spooky games.</p>
+            <iframe src="https://www.youtube.com/embed/MrE0LQmaMBI" allowfullscreen></iframe>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card">
+            <h3>Project 3: Melody Grove</h3>
+            <p>Melody Grove is an application designed for early music education, blending interactive sound 'gardens' with spatial audio and customizable digital environments. Users can explore plant-themed objects that represent musical cells, enabling immersive sound mixing and creative learning.</p>
+            <p>Look <a href="https://zhangjt.wixsite.com/music-space-dev-log">here</a> to find it!</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Gurnoor Kaur. All rights reserved.</p>
+        <p><a href="https://linkedin.com/in/gkaur07" target="_blank">LinkedIn</a> | <a href="mailto:kaurgur@umich.edu">kaurgur@umich.edu</a></p>
+    </footer>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Show the selected tab
+            const activeTab = document.getElementById(tabId);
+            activeTab.classList.add('active');
+        }
+    </script>
 </body>
 </html>
